@@ -1,0 +1,102 @@
+\documentstyle[margin,line,pifont,palatino,url,tabularx]{res}
+
+\oddsidemargin -.25in
+\evensidemargin -.5in
+\textwidth=5.75in
+\itemsep=0in
+\parsep=0in
+
+\setlength{\topmargin}{-0.75in}
+%\setlength{\topmargin}{0.25in}
+\setlength{\textheight}{10.25in}
+
+\newenvironment{list1}{
+  \begin{list}{$\triangleright$}{%
+      \setlength{\itemsep}{0.03in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\urlstyle{same}
+
+\begin{document}
+
+\name{Dr. Michael Kuhlen \vspace*{.1in}}
+
+\begin{resume}
+
+\vspace*{0.15in}
+
+\section{\sc Contact Information}
+\vspace*{.05in}
+\begin{tabularx}{\textwidth}{Xr}
+Berkeley, CA / Mountain View, CA         & \url{www.mqk.name} \\
+kuhlen@gmail.com                         & \url{linkedin.com/in/}$\!$\url{mikekuhlen} \\
+(831) 588-1468 \\                        & \\
+\end{tabularx}
+
+\vspace*{-0.15in}
+\section{\sc Experience}
+\hspace*{-0.1in}
+\begin{tabularx}{1.025\textwidth}{Xr}
+\textbf{Fellow, Insight Data Science}, Mountain View, CA & Aug. - Oct. 2013
+\end{tabularx}
+\vspace*{-0.1in}
+\begin{list1}
+\item Created \textit{Delay Me Not!}, a flight delay predictor providing ticket purchasing advice.
+\item Analyzed 16GB of flight data (150 million domestic flights from 1987 to 2013).
+\item Applied a variety of machine learning algorithms (linear and logistic regression, generalized linear models, Gaussian processes) using Python's numpy, scipy, pandas, and scikit-learn packages to model flight delay predictions.
+\item Designed an interactive web frontend, utilizing Flask, Twitter Bootstrap, and javascript, featuring live MySQL database queries. Hosted on Amazon S3.
+\end{list1}
+
+
+
+\hspace*{-0.1in}
+\begin{tabularx}{1.025\textwidth}{Xr}
+\textbf{Research Fellow, UC Berkeley}, Berkeley, CA & 2009 - 2013 \\
+\textbf{Postdoctoral Member, Institute for Advanced Study}, Princeton, NJ & 2006 - 2009 \\
+\end{tabularx}
+\vspace*{0.025in}
+\begin{list1}
+\item Performed large-scale numerical N-body simulations (on 1000's of cores on NASA's \textit{Pleiades} and NCCS's \textit{Jaguar} supercomputers) of the formation of a Milky-Way-analog galaxy. \\
+(The \textsc{Via Lactea II} simulation was featured in the Department Of Energy's OASCR \textit{Breakthroughs 2008} report on Recent Significant Advancements in Computational Science.)
+\item Analyzed and visualized 20TB of numerical simulation data consisting of billions of particles per output.
+\item Studied the formation of dwarf galaxies utilizing state-of-the-art cosmological adaptive mesh refinement (AMR) hydrodynamics simulations.
+\item Developed C and Python codes (often MPI-parallelized) for numerical data analysis and visualization.
+\item Contributed to the development of the \textit{Enzo} cosmological hydrodynamics community code (\url{enzo-project.org}) written in C++ and Fortran, and the \textit{yt Project} (\url{yt-project.org}), an astrophysics data analysis and visualization package for Python.
+\item Published 41 papers (18 first author) in peer reviewed journals (including Nature and Science), which together have received more than 2,500 citations.
+\end{list1}
+
+\section{\sc Skills}
+\textbf{Languages:} Python, C, Fortran, MySQL, bash, HTML/CSS, \LaTeX, C++ (some experience), javascript (some exp.) \vspace{0.05in} \\
+\textbf{Tools:} git, hg, numpy, scipy, pandas, scikit-learn, matplotlib, mpi4py, IPython notebook, HDF5, Flask, Twitter Bootstrap, d3.js (some exp.) \vspace{0.05in} \\
+\textbf{Other:} Linux (10+ years), numerical simulation (N-body and AMR CFD), numerical methods, parallel computation (MPI), visualization, machine learning and classification (some exp.) 
+
+\section{\sc Education}
+\textbf{University of California at Santa Cruz}, Santa Cruz, California \\
+{\em Ph.D., Astronomy \& Astrophysics, ``Adventures in Numerical Astrophysics'', June 2006}
+
+\textbf{California Institute of Technology}, Pasadena, California \\
+{\em B.S., Physics,  June 2000}
+
+
+\section{\sc Honors and Awards} 
+\begin{list1}
+\item Whitford Prize, UC Santa Cruz, 2002
+\item Caltech, graduated with honors, 2000
+\item Caltech Carnation Prize for Academic Merit, 1998
+\end{list1}
+
+
+\section{\sc Public Talks}
+\begin{list1}
+\item Mt.~Tamalpais State Park Astronomy Program (co-sponsored by Bay Area Wonderfest) \\ ``Dark Matter, Dark Skies, Bright Minds'', June 2012
+
+\item SF Amateur Astronomers, ``The Milky Way as a Dark Matter Laboratory'', May 2012
+
+\item ``What Physicists Do'' lecture series at Sonoma State University, October 4, 2010
+\end{list1}
+
+\end{resume}
+\end{document}
+
