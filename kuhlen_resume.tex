@@ -1,14 +1,23 @@
 \documentstyle[margin,line,pifont,palatino,url,tabularx]{res}
 
-\oddsidemargin -.25in
-\evensidemargin -.5in
-\textwidth=5.75in
+%\oddsidemargin -0.25in
+%\textwidth=5.75in
+
+\oddsidemargin -0.25in
+\resumewidth=7in
+\textwidth=7in
+\newsectionwidth{1in}
+\setlength{\sectionskip}{0.1in}
+
 \itemsep=0in
 \parsep=0in
+
+
 
 \setlength{\topmargin}{-0.75in}
 %\setlength{\topmargin}{0.25in}
 \setlength{\textheight}{10.25in}
+
 
 \newenvironment{list1}{
   \begin{list}{$\triangleright$}{%
@@ -43,50 +52,57 @@ kuhlen@gmail.com                         & \url{linkedin.com/in/}$\!$\url{mikeku
 \end{tabularx}
 \vspace*{-0.1in}
 \begin{list1}
-\item Created \textit{Delay Me Not!}, a flight delay predictor providing ticket purchasing advice.
-\item Analyzed 16GB of flight data (150 million domestic flights from 1987 to 2013).
-\item Applied a variety of machine learning algorithms (linear and logistic regression, generalized linear models, Gaussian processes) using Python's numpy, scipy, pandas, and scikit-learn packages to model flight delay predictions.
-\item Designed an interactive web frontend, utilizing Flask, Twitter Bootstrap, and javascript, featuring live MySQL database queries. Hosted on Amazon S3.
+\item Created \textit{Delay Me Not!}$\;$(www.delaymenot.info), a flight delay predictor providing ticket purchasing advice.
+\item Analyzed 150 million domestic flights from 1987 to 2013, stored in a MySQL database.
+\item Applied a variety of machine learning regression and classification algorithms (linear and logistic regression, k-nearest-neighbors, random forests) using Python's numpy, scipy, pandas, and scikit-learn packages to model flight delay predictions.
+\item Designed an interactive web front end, utilizing Flask, Twitter Bootstrap, and JavaScript, hosted on my own nginx webserver.
 \end{list1}
 
-
-
+\vspace*{-0.05in}
 \hspace*{-0.1in}
 \begin{tabularx}{1.025\textwidth}{Xr}
-\textbf{Research Fellow, UC Berkeley}, Berkeley, CA & 2009 - 2013 \\
-\textbf{Postdoctoral Member, Institute for Advanced Study}, Princeton, NJ & 2006 - 2009 \\
+\textbf{Postdoctoral Researcher} & \\
+\hspace{0.25in} \textit{Theoretical Astrophysics Center, UC Berkeley}, Berkeley, CA & 2009 - 2013 \\
+\hspace{0.25in} \textit{Institute for Advanced Study}, Princeton, NJ & 2006 - 2009 \\
 \end{tabularx}
-\vspace*{0.025in}
+%\vspace*{0.025in}
 \begin{list1}
-\item Performed large-scale numerical N-body simulations (on 1000's of cores on NASA's \textit{Pleiades} and NCCS's \textit{Jaguar} supercomputers) of the formation of a Milky-Way-analog galaxy. \\
-(The \textsc{Via Lactea II} simulation was featured in the Department Of Energy's OASCR \textit{Breakthroughs 2008} report on Recent Significant Advancements in Computational Science.)
+\item Performed large-scale numerical N-body simulations (on 1000's of cores on NASA's \textit{Pleiades} and NCCS's \textit{Jaguar} supercomputers) of the formation of a Milky-Way-analog galaxy. (Featured in the Department Of Energy's OASCR \textit{Breakthroughs 2008} report on Recent Significant Advancements in Computational Science.)
 \item Analyzed and visualized 20TB of numerical simulation data consisting of billions of particles per output.
 \item Studied the formation of dwarf galaxies utilizing state-of-the-art cosmological adaptive mesh refinement (AMR) hydrodynamics simulations.
-\item Developed C and Python codes (often MPI-parallelized) for numerical data analysis and visualization.
+\item Developed C and Python tools (often MPI-parallelized) for numerical data analysis and visualization.
 \item Contributed to the development of the \textit{Enzo} cosmological hydrodynamics community code (\url{enzo-project.org}) written in C++ and Fortran, and the \textit{yt Project} (\url{yt-project.org}), an astrophysics data analysis and visualization package for Python.
 \item Published 41 papers (18 first author) in peer reviewed journals (including Nature and Science), which together have received more than 2,500 citations.
 \end{list1}
 
-\section{\sc Skills}
-\textbf{Languages:} Python, C, Fortran, MySQL, bash, HTML/CSS, \LaTeX, C++ (some experience), javascript (some exp.) \vspace{0.05in} \\
-\textbf{Tools:} git, hg, sed, awk, numpy, scipy, pandas, scikit-learn, matplotlib, mpi4py, IPython notebook, HDF5, Flask, Twitter Bootstrap, d3.js (some exp.) \vspace{0.05in} \\
-\textbf{Other:} Linux (10+ years), numerical simulation (N-body and AMR CFD), numerical methods, parallel computation (MPI), visualization, machine learning and classification (some exp.) 
-
-\section{\sc Education}
-\textbf{University of California at Santa Cruz}, Santa Cruz, California \\
-{\em Ph.D., Astronomy \& Astrophysics, ``Adventures in Numerical Astrophysics'', June 2006}
-
-\textbf{California Institute of Technology}, Pasadena, California \\
-{\em B.S., Physics,  June 2000}
-
-
-\section{\sc Honors and Awards} 
+\vspace*{-0.05in}
+\hspace*{-0.1in}
+\begin{tabularx}{1.025\textwidth}{Xr}
+\textbf{Ph.D. Student, UC Santa Cruz}, Santa Cruz, CA & 2000 - 2006
+%\hspace{0.25in} \textit{UC Santa Cruz}, Santa Cruz, CA & 2000 - 2006
+\end{tabularx}
+\vspace*{-0.1in}
 \begin{list1}
-\item Whitford Prize, UC Santa Cruz, 2002
-\item Caltech, graduated with honors, 2000
-\item Caltech Carnation Prize for Academic Merit, 1998
+\item Investigated a diverse set of astrophysical research topics utilizing a variety of numerical techniques and simulation codes.
+\item Analyzed, visualized, and synthesized simulation data with self-developed, open-source (VisIt), and commercial (IDL, Mathematica) tools.
+\item Co-taught the Akamai Maui Short Course, applying inquiry-based science education techniques to prepare Hawaiian undergraduates for summer internships at local technology companies.
 \end{list1}
 
+
+
+\section{\sc Skills}
+\textbf{Languages:} Python, C, MySQL, bash, HTML/CSS, \LaTeX, C++ (some exp.), JavaScript (some exp.) \vspace{0.05in} \\
+\textbf{Tools:} git, hg, sed, awk, numpy, scipy, pandas, scikit-learn, matplotlib, mpi4py, IPython notebook, HDF5, Flask, Twitter Bootstrap \vspace{0.05in} \\
+\textbf{Other:} Linux (10+ years), numerical simulation (N-body and AMR CFD), numerical analysis, parallel computation (MPI), visualization, machine learning and classification (some exp.) 
+
+\section{\sc Education}
+\hspace*{-0.1in}
+\begin{tabularx}{1.025\textwidth}{Xr}
+\textbf{University of California at Santa Cruz}, Santa Cruz, California & \\
+\hspace{0.25in} \textit{Ph.D., Astronomy \& Astrophysics, ``Adventures in Numerical Astrophysics''} & June 2006 \\[0.1in]
+\textbf{California Institute of Technology}, Pasadena, California & \\
+\hspace{0.25in} \textit{B.S., Physics} & June 2000 \\
+\end{tabularx}
 
 \section{\sc Public Talks}
 \begin{list1}
@@ -94,7 +110,7 @@ kuhlen@gmail.com                         & \url{linkedin.com/in/}$\!$\url{mikeku
 
 \item SF Amateur Astronomers, ``The Milky Way as a Dark Matter Laboratory'', May 2012
 
-\item ``What Physicists Do'' lecture series at Sonoma State University, October 4, 2010
+\item ``What Physicists Do'' lecture at Sonoma State University, October 4, 2010
 \end{list1}
 
 \end{resume}
